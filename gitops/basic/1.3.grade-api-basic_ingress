@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   namespace: grade-demo
-  name: grade-api-basic_ingress
+  name: grade-api-basic.ingress
   labels:
     name: grade-api-basic_ingress
 spec:
