@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: grade-api_service
+  name: grade-api-basic_service
   namespace: grade-demo
 spec:
   type: ClusterIP ### NodePort
   selector:
-    app: grade-api
+    app: grade-api-basic
   ports:
   - port: 3000
     targetPort: 3000
