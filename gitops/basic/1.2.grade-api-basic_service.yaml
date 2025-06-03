@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: grade-api-basic.service
+  name: grade-api-basic
   namespace: grade-demo
 spec:
   type: ClusterIP ### NodePort
