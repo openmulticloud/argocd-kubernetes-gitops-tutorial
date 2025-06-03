@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: grade-api-basic
-        ### image: rslim087/kubernetes-course-grade-submission-api:stateless
-        image: harbor.nghiapg.net/grade-api/grade-api:1.0.0
+        image: rslim087/kubernetes-course-grade-submission-api:stateless
+        ### image: harbor.nghiapg.net/grade-api/grade-api:1.0.0
         ports:
           - containerPort: 3000
