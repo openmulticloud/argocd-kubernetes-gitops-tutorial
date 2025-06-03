@@ -4,7 +4,7 @@ metadata:
   name: grade-api-basic_deployment
   namespace: grade-demo
   labels:
-    app: grade-api-basic_deployment
+    app: grade-api-basic
 spec:
   replicas: 3
   selector:
