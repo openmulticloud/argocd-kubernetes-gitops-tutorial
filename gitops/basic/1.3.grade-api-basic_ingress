@@ -2,9 +2,9 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   namespace: grade-demo
-  name: grade-api-basic.ingress
+  name: grade-api-basic
   labels:
-    name: grade-api-basic.ingress
+    name: grade-api-basic
 spec:
   rules:
   - host: gradeportal.nghiapg.net
@@ -14,7 +14,7 @@ spec:
         path: "/"
         backend:
           service:
-            name: grade-api-basic.service
+            name: grade-api-basic
             port: 
               number: 3000
   ingressClassName: nginx ### We use nginx ingress (a shared Public LoadBalancer) to expose ClusterIP svc of grade-api_service to public to do the test
