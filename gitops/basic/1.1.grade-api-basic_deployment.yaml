@@ -15,9 +15,12 @@ spec:
       labels:
         app: grade-api-basic
     spec:
+      imagePullSecrets:
+      - name: secret-harbor-registry
       containers:
       - name: grade-api-basic
-        image: rslim087/kubernetes-course-grade-submission-api:stateless
+        image: harbor.nghiapg.net/k8s-private/grade-api:1.0.0
+        ### image: rslim087/kubernetes-course-grade-submission-api:stateless
         ###image: harbor.nghiapg.net/grade-api/grade-api:1.0.0
         ports:
           - containerPort: 3000
