@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grade-api-basic.deployment
+  name: grade-api-basic
   namespace: grade-demo
   labels:
     app: grade-api-basic
